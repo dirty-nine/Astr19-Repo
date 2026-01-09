@@ -9,8 +9,8 @@ class Animal:
         self.has_tail = True
         self.is_furry = False
 
-    def __str__(self):
-        return(f"My favorite animal has an arm and leg length of {self.arm_len}cm and {self.leg_len}cm respectively. It has {self.num_eyes} eye{"s" if self.num_eyes > 1 else ""}, has {"a" if self.has_tail else "no"} tail, and is{"n't" if not self.is_furry else ""} furry.")
+    def print_traits(self):
+        print(f"My favorite animal has an arm and leg length of {self.arm_len}cm and {self.leg_len}cm respectively. It has {self.num_eyes} eye{"s" if self.num_eyes > 1 else ""}, has {"a" if self.has_tail else "no"} tail, and is{"n't" if not self.is_furry else ""} furry.")
 
 dog = Animal()
-print(dog)
+dog.print_traits()
